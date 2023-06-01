@@ -13,12 +13,13 @@ function setCarritoLocal(carrito) {
 }
 
 if (localStorage.getItem('carrito') === null) {
-  
+  let carrito = setCarritoLocal(carritoVerduleria)
+  localStorage.setItem('carrito', carrito);
 }
 
 function agregarFruta(fruta) {
   let carrito = getCarritoLocal();
-  
+
   carrito.push(fruta);
   setCarritoLocal(carrito)
 }
