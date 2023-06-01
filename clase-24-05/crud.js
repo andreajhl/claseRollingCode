@@ -52,3 +52,14 @@ function eliminarUsuariosInactivos() {
 
   usuarios = data
 }
+ 
+function modificarNombre() {
+  let buscarUser = prompt("Ingresar nombre a buscar") 
+  let nuevoValor = prompt("Ingrese nuevo valor");
+
+  usuarios.findIndex(function(user, index) {
+    if (buscarUser === user.first_name) {
+      usuarios[index].first_name = nuevoValor
+    }
+  });
+}
