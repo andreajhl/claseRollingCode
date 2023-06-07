@@ -2,8 +2,17 @@
 let carritoVerduleria = ['pera', 'manzana', 'banana'];
 
 function getCarritoLocal() {
-  let carrito = localStorage.getItem('carrito');
-  return JSON.parse(carrito);
+  let carrito = JSON.parse(localStorage.getItem('carrito'));
+
+  let conatiner = document.querySelector('#carrito');
+  conatiner.innerHTML = ''
+
+  carrito.map(function(element) {
+    let item = document.createElement('p')
+    item.innerText = element;
+
+    conatiner.appendChild(item)
+  })
 }
 
 function setCarritoLocal(carrito) {
