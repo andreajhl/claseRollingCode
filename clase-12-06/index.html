@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dom - Events</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Supermercado Rolling</h1>
+            <div>Carrito: <span id="car">0</span></div>
+        </div>
+        <div class="form-add">
+            <form>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" autocomplete="off">
+                <label for="price">Precio</label>
+                <input type="number" name="price" id="price" autocomplete="off">
+                <div>
+                    <p>Categoria</p>
+                    <label for="frut">Frutas</label>
+                    <input type="radio" name="category" value="fruts" id="frut" autocomplete="off">
+                    <label for="meat">Carnes</label>
+                    <input type="radio" name="category"  value="meats" id="meat" autocomplete="off">
+                    <label for="vegetable">Vegetales</label>
+                    <input type="radio" name="category"  value="vegetables" id="vegetable" autocomplete="off">
+                </div>
+                <button tye="submit" id="btn-search">Crear</button>
+            </form>
+        </div>
+        <div id="products">
+            <div id="fruts"></div>
+            <div id="vegetables"></div>
+            <div id="meats"></div>
+        </div>
+    </main>
+    <script defer src="./product.js"></script>
+    <script defer src="./index.js"></script>
+</body>
+</html>

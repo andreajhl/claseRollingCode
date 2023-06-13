@@ -1,0 +1,47 @@
+.card {
+  max-width: 200px;
+  height: 250px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  max-width: 100px;
+  height: 100px;
+}
+
+form {
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+form input{
+  margin-bottom: 30px;
+}
+
+.form-add {
+  background: rgb(255, 237, 237);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border: 1px solid black;
+}
+
+#fruts,
+#vegetables,
+#meats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  background-color: rgb(232, 216, 216);
+  margin-bottom: 30px;
+  border: 1px solid black;
+}
